@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="ps.plone.zmi">
+
+  <browser:page
+      class=".admin.PropertyshelfOverview"
+      for="OFS.interfaces.IApplication"
+      name="plone-overview"
+      permission="zope.Public"
+      template="templates/propertyshelf-overview.pt"
+      />
+
+</configure>

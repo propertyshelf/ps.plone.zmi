@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      i18n:domain="plone">
+  <head>
+    <title>Propertyshelf Plone Hosting</title>
+    <link rel="stylesheet" type="text/css" href="/++resource++plone-admin-ui.css" />
+  </head>
+  <body>
+    <div id="box">
+      <img src="/++resource++plone-logo.png" width="215" height="56" alt="Plone Logo"/>
+    </div>
+
+    <h1>Propertyshelf Plone Hosting</h1>
+
+    <div id="footer">
+      <p>Powered by <a href="http://propertyshelf.com" target="_blank" title="Propertyshelf: your Plone hosting provider.">Propertyshelf</a> and <a href="http://plone.org" target="_blank" title="The Plone Content Management System">Plone</a>. <a href="http://propertyshelf.com/en/contact">Contact us</a> to host your Plone site.</p>
+    </div>
+
+  </body>
+</html>
