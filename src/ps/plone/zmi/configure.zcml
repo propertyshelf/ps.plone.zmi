@@ -1,8 +1,13 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:five="http://namespaces.zope.org/five"
     i18n_domain="ps.plone.zmi">
 
   <five:registerPackage package="." initialize=".initialize" />
 
+  <browser:resource
+      file="ps-admin-ui.css"
+      name="ps-admin-ui.css"
+      />
 </configure>

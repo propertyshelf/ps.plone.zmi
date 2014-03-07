@@ -1,0 +1,7 @@
+form[action$="plone-addsite"] {
+    display: none;
+}
+
+.form-element form {
+    display: none;
+}
