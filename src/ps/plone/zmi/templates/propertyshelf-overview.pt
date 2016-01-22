@@ -8,16 +8,23 @@
   <head>
     <title>Propertyshelf Plone Hosting</title>
     <link rel="stylesheet" type="text/css" href="/++resource++plone-admin-ui.css" />
+    <style type="text/css">
+#box a {
+    border-bottom: 0;
+}
+    </style>
   </head>
   <body>
     <div id="box">
-      <img src="/++resource++plone-logo.png" width="215" height="56" alt="Plone Logo"/>
+      <a href="http://propertyshelf.com" target="_blank" title="Propertyshelf: your Plone hosting provider.">
+        <img src="/++resource++propertyshelf-logo.png" alt="Propertyshelf Logo"/>
+      </a>
     </div>
 
     <h1>Propertyshelf Plone Hosting</h1>
 
     <div id="footer">
-      <p>Powered by <a href="http://propertyshelf.com" target="_blank" title="Propertyshelf: your Plone hosting provider.">Propertyshelf</a> and <a href="http://plone.org" target="_blank" title="The Plone Content Management System">Plone</a>. <a href="http://propertyshelf.com/en/contact">Contact us</a> to host your Plone site.</p>
+      <p>Powered by <a href="http://propertyshelf.com" target="_blank" title="Propertyshelf: your Plone hosting provider.">Propertyshelf</a> and <a href="http://plone.org" target="_blank" title="The Plone Content Management System">Plone</a>. <a href="http://propertyshelf.com/en/contact" target="_blank">Contact us</a> to host your Plone site.</p>
     </div>
 
   </body>

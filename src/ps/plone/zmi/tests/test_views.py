@@ -32,3 +32,11 @@ class TestViews(unittest.TestCase):
             name='plone-overview',
         )
         self.assertIn('propertyshelf', view())
+
+    def test_propertyshelf_logo(self):
+        """Validate that the propertyshelf logo is shown."""
+        view = getMultiAdapter(
+            (self.app, self.portal.REQUEST),
+            name='plone-overview',
+        )
+        self.assertIn('/++resource++propertyshelf-logo.png', view())
