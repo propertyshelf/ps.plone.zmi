@@ -4,7 +4,7 @@
 from setuptools import setup, find_packages
 import sys
 
-version = '0.3dev'
+version = '0.3'
 description = 'ZMI customizations for Plone instances.'
 long_description = ('\n'.join([
     open('README.rst').read(),
