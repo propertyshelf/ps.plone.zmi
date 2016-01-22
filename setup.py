@@ -2,6 +2,7 @@
 """Setup for ps.plone.zmi package."""
 
 from setuptools import setup, find_packages
+import sys
 
 version = '0.3dev'
 description = 'ZMI customizations for Plone instances.'
@@ -9,6 +10,13 @@ long_description = ('\n'.join([
     open('README.rst').read(),
     open('CHANGES.rst').read(),
 ]))
+
+tests_require = [
+    'plone.app.testing',
+]
+
+if getattr(sys, 'version_info', (0, 0, 0)) < (2, 7, 0, 'final'):
+    tests_require.append('unittest2')
 
 install_requires = [
     'setuptools',
@@ -44,9 +52,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     extras_require={
-        'test': [
-            'plone.app.testing',
-        ],
+        'test': tests_require,
     },
     install_requires=install_requires,
     entry_points="""
