@@ -2,7 +2,10 @@
 """Test Views for ps.plone.zmi."""
 
 # python imports
-import unittest2 as unittest
+try:
+    import unittest2 as unittest
+except ImportError:
+    import unittest
 
 # zope imports
 from zope.component import getMultiAdapter
@@ -26,6 +29,6 @@ class TestViews(unittest.TestCase):
     def test_view_is_registered(self):
         view = getMultiAdapter(
             (self.app, self.portal.REQUEST),
-            name="plone-overview",
+            name='plone-overview',
         )
         self.assertIn('propertyshelf', view())

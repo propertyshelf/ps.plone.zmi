@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """ZMI customizations for Plone instances."""
 
 # local imports
