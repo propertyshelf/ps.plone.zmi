@@ -4,6 +4,8 @@ Changelog
 0.3 (unreleased)
 ----------------
 
+- Added Propertyshelf logo.
+
 
 0.2 (2014-03-07)
 ----------------
