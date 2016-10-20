@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.4 (unreleased)
+0.4 (2016-10-20)
 ----------------
 
 - Update CSS to hide forms with authenticator token.
