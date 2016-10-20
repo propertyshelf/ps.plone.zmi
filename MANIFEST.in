@@ -1,4 +1,5 @@
-recursive-include src *
-recursive-include docs *
-global-exclude *pyc
-include CHANGES.rst
+graft src/ps
+graft docs
+include *.rst
+global-exclude *.pyc
+prune docs/build
