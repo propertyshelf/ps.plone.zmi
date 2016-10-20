@@ -4,6 +4,7 @@ Changelog
 0.4 (unreleased)
 ----------------
 
+- Update CSS to hide forms with authenticator token.
 - Add Plone 5 compatibility.
 
 
