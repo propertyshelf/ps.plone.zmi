@@ -7,7 +7,6 @@ from plone.app.testing import (
     PloneSandboxLayer,
     PLONE_FIXTURE,
 )
-from zope.configuration import xmlconfig
 
 
 class PSPloneZMI(PloneSandboxLayer):
@@ -18,14 +17,8 @@ class PSPloneZMI(PloneSandboxLayer):
         """Set up Zope for testing."""
         # Load ZCML
         import ps.plone.zmi
-        xmlconfig.file(
-            'configure.zcml', ps.plone.zmi,
-            context=configurationContext,
-        )
-        xmlconfig.file(
-            'overrides.zcml', ps.plone.zmi,
-            context=configurationContext,
-        )
+        self.loadZCML(package=ps.plone.zmi)
+        self.loadZCML(package=ps.plone.zmi, name='overrides.zcml')
 
 
 PS_PLONE_ZMI_FIXTURE = PSPloneZMI()
